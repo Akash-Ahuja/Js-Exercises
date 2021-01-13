@@ -1,0 +1,384 @@
+//  Coding Exercises.js
+//  Created by Akash Ahuja on 1/6/21.
+//
+
+===================================================================================================================================================================
+JS coding
+
+// QUESTION 1: Current Year
+// Create an Arithmetic Expression that uses three mathematical operators (+,-,/,*) that returns the date of the current year.
+
+let currentYear = 3021 - 50 + 100 - 1050;
+console.log("The current year is: ", currentYear);
+
+// QUESTION 2: My Age
+// Create an Arithmetic Expression that uses four mathematical operators (+,-,/,*) that returns your current age.
+
+const myAge = 20 / 4 * 2 + 30 - 18;
+console.log("My current age is: ", myAge);
+
+// QUESTION 3: To Uppercase
+// Create a String by surrounding characters with an apostrophe or quotation marks. Call the toUpperCase() method on the string.
+
+const word = "World";
+word.toUpperCase();
+word();
+
+// QUESTION 4: To Lowercase
+// Create a String by surrounding characters with an apostrophe or quotation marks. Call the toLowerCase() method on the string.
+
+const command = "Follow orders";
+command.toLowerCase();
+command();
+
+// QUESTION 5: Favorite Activity
+// Create a variable called favoriteActivity. Assign the value 'coding' to favoriteActivity.
+
+let favoriteActivity = "coding";
+console.log("My favorite activity is: ", favoriteActivity);
+
+// QUESTION 6: Variable Assignment
+// Create a variable called myFirstName. Assign myFirstName a string value that represents your first name.
+
+// Create another variable called myFavoriteNum. Assign myFavoriteNum a number value that represents your favorite number!
+
+// Create a third variable, havingFun. Assign havingFun a boolean value that reflects whether or not you're having fun!
+
+let myFirstName = "Akash";
+console.log(myFirstName);
+
+let myFavoriteNum = 19;
+console.log(myFavoriteNum);
+
+let havingFun = true;
+
+// QUESTION 7: First Sum
+// Given three numbers, assign the sum of all three numbers to a variable called myFirstSum.
+
+const num1 = 50;
+const num2 = 70;
+const num3 = 25;
+const myFirstSum = 0;
+
+myFirstSum = num1 + num2 + num3;
+console.log(myFirstSum);
+
+// QUESTION 8: Express Guess
+// Look at the expression below. Guess what the result of the expression will be, and store your guess in a variable called myGuess.
+
+// Expression: 20 * (50 / (5 * 2) + 15)
+
+let myGuess = 400;
+console.log("My guess is: ", myGuess);
+
+
+// QUESTION 9: Take the Shortcut
+// Given a starting value assigned to the happyNum variable, use at least three of the following operators to reassign the value in happyNum until it is equal to 5:
+
+// +=
+// -=
+// *=
+// /=
+// ++
+
+let happyNum = 2000;
+happyNum -= 1000;
+happyNum /= 10;
+happyNum += 25;
+happyNum /= 5;
+
+console.log("My number comes out to be: ", happyNum);
+
+// QUESTION 1: Simple Sum
+// Define a function simpleSum that takes two numbers and returns the sum of those numbers.
+
+function simpleSum(num1, num2) {
+    simpleSum = num1 + num2;
+    return simpleSum;
+}
+
+simpleSum(20, 30);
+
+// QUESTION 2: Default Greet
+// Define a function, defaultGreet, that takes a first and a last name. defaultGreet should return a string greeting for the given names.
+
+function defaultGreet(firstName, lastName) {
+    console.log("Hi, my name is " + firstName + lastName);
+};
+
+defaultGreet("Akash", "Ahuja");
+
+// QUESTION 3: Tax Caclulator
+// Define a function taxCalculator that accepts the price of an item and a state. taxCalculator should return the after-tax cost of the item, assuming NY's tax is 4% and NJ's sales tax is 6.625%.
+
+// taxCalculator(100, 'NY'); // => 104
+// taxCalculator(100, 'NJ'); // => 106.625
+
+function taxCalculator(num1, state) {
+    if (state === 'NY') {
+        num1 = 4 / 100 + 1;
+    }
+    else if (state === 'NJ') {
+        num1 = 6.625 / 100 + 1;
+    }
+   
+    product = 200 * num1;
+    return product;
+};
+
+taxCalculator(200, 'NY');
+taxCalculator(200, 'NJ');
+
+// QUESTION 4: My Mnemonic
+// Write a function myMnemonic that accepts up to four strings. myMnemonic should return a new string.
+
+// Note that the user may not pass in all four strings!
+
+function myMnemonic(A, B, C, D) {
+    return A + B + C + D;
+};
+
+console.log(myMnemonic("C", "L", "A", "P"));
+
+// QUESTION 5: Greeting
+// Define a function greeting that accepts an optional string argument called name. greeting should return a personalized string if the name is present.
+
+function greeting(name) {
+    if(name) {                      // No need to write present === //
+        console.log("Hi" + name);
+    } else {
+        console.log("Hi");
+    }
+};
+
+greeting("Adam");
+greeting();
+
+
+// IF/Else challenges
+
+//Challenge #1!!  Fill in the condition in the if statement with any comparision operator.  It will console.log() if the condition is True.
+
+if(50 > 25) {
+    console.log("True");
+}
+
+//Challenge #2!!  Fill in the condition in the if statement with any comparision operator.  It will console.log() if the condition is True.  Else will log if the condition is false.
+// IF/ELSE STATEMENT
+
+if(5 === 5){
+    console.log("True");
+} else {
+    console.log("False");
+}
+
+// Challenge 3!!  Fill in the argument for num in the function and get it to print out the correct log.
+
+// GREATER THAN 10
+    
+function greaterThanTen(num) {
+    if (num > 10) {
+        console.log("Number is greater than 10", num);
+    } else {
+        console.log("Number is less than 10", num);
+    }
+};
+
+greaterThanTen(12);
+greaterThanTen(2);
+
+//Challenge 4!!  Fill in the argument for num in the function and get it to print out the correct log.  Feel free to change the number to get different responses.
+
+// GUESS THE NUMBER
+
+function guessTheNumber(num) {
+    if(num === 10) {
+        console.log("You guessed the right number!", num);
+    } else {
+        console.log("Try once again", num);
+    }
+};
+
+guessTheNumber(137);
+guessTheNumber(56);
+guessTheNumber(10);
+
+//Challenge 5!! Fill in the arguments to get the correct log!
+
+//LOGICAL OPERATORS
+
+// &&  "AND"
+
+function sportsDay(temperature, weather) {
+    if (temperature === 80 && weather === "Sunny") {
+        console.log("Its a great day to play Cricket!");
+    } else if (temperature === 80 && weather === "Rainy") {
+        console.log("Good day to play but gotta wait for the rain to stop!");
+    } else {
+        console.log("Its brick outisde. Stay home!");
+    }
+};
+
+sportsDay(70, "Cold");
+sportsDay(80, "Sunny");
+
+/*Challenge 6!!  Once again fill in the arguments to understand what output you will go with the || operator.
+ Feel free to change around code to get the correct message.
+ */
+
+// || "OR"
+
+function planDay(weather, mood) {
+    if(weather === "sunny" || mood > 8) {
+        console.log("The josh is high! Lets go!!");
+    } else if(weather === "Freezing" || mood < 4) {
+        console.log("Nah, lets skip today!");
+    } else if(weather === "Cold" || mood <= 7) {
+        console.log("Gotta push myself harder!");
+    } else{
+        console.log("ERROR 404!, I never go out for run!");
+    }
+};
+
+planDay("Freezing", 2);
+planDay("Cold", 6);
+planDay("sunny", 9);
+
+//Challenge 7!!  Use the ! operator in the if() statement.  See what output you get.
+
+function beautifulDay(sky, clouds) {
+    if (sky === "clear" && clouds != true) {
+        console.log("Lets hangout today!");
+    } else {
+        console.log("It's not a good idea to go out today");
+    }
+};
+
+beautifulDay("clear", false);
+
+// Challenge 8!! Fill in the argument and see if the value is Truthy or Falsy!!!
+//Truthy, Falsy
+
+function truthyOrFalsy(value) {
+    if(value === 8) {
+        console.log("The value is true!");
+    } else {
+        console.log("The value is false!");
+    }
+};
+
+truthyOrFalsy(8);
+truthyOrFalsy(46);
+
+// In this Challenge you will need to find a way to execute the "console.log" on line 15 followed by the correct response for the number guessed.  Do not manipulate the conditional statements(if, else if, else)!! Only manipulate the code blocks(the code inside the curly brackets {})!!  Goodluck!!
+
+// GUESS THE NUMBER
+
+function guessTheNumber(num) {
+    if (num === 5) {
+        console.log("last line in the function!");
+    }
+    if (num === 5) {
+        return (message = "You guessed the correct number!!");
+    } else if (num === 4 || num === 6) {
+        return (message = "Your very close!");
+    } else {
+        return (message = "keep guessing!!");
+    }
+}
+
+guessTheNumber(5);
+
+//#1  Make two variables with strings as values.  Then concat both strings using the + operator.  Print out your results in a console.log()
+
+let firstName = "Akash";
+let lastName = "Ahuja";
+const fullName = firstName + " " + lastName;
+
+console.log(fullName);
+
+//#2 Make a variable with a value as a Famous Quote.  Now use the .charAt() method to grab a Specific character and print it out in a console.log().
+
+//Code Here
+
+let famous = "Make it or break it";
+console.log(famous.charAt(9));
+
+//#3  Find the length of the given string. Use the .length property.  Use Conditionals with specific messages to understand how long the string is.
+
+let stringLength = "Good afternoon Code Ninjas!  Practice makes perfect!";
+
+if(stringLength.length > 0) {
+    console.log(stringLength.length);
+} else{
+    console.log("There is no string provided!");
+}
+
+// Use the indexOf() method to find what index the letter w is at in this string. Use Conditionals to let the user know exacly the index of the character your looking for or not.
+
+let indexFinder = "This method will find an index of a character where it is at in the sentence.";
+
+if(indexFinder.contains("w")) {
+    console.log(indexFinder.indexOf("w"));
+} else {
+    console.log("w is not present");
+}
+
+/*
+ Ask Nicely
+ - Description
+ Create the function askNicely that accepts a sentence
+ as an argument. If the last character of the sentence is
+ a question mark, then make sure the question ends with
+ the word "please".
+ If the sentence is not a question, then return the
+ inputted string without modification. If the sentence
+ is a question, but already has a please, then also
+ return the input without modification.
+*/
+
+function askNicely(sentence) {
+    if (sentence.includes("?")) && (sentence.includes("please")) {
+        return sentence;
+    } else if(sentence.includes(".")) {
+        return sentence;
+    } else {
+        console.log("There is no sentence provided.");
+    }
+};
+
+askNicely("May I borrow a pen please?");
+askNicely("Nice perfume.");
+
+/* Challenge #2
+ #1
+ In this challenge we want to use the charAt() to print out a specific message
+ */
+
+let challenge = "We will rock you!";
+let a = challenge.charAt(0) + challenge.charAt(1) + challenge.charAt(8) + challenge.charAt(9) + challenge.charAt(10) + challenge.charAt(11);
+console.log(a);
+
+
+//#2
+ // In this challenge we want to use the includes() method.  I want to see if the string value in the variable has the specific word put into the includes() argument.  Use Conditionals to keep practicing with If/else statements.
+//
+
+let word = "We will rock you!";
+
+if(word.includes("rock")) {
+    console.log("The word you were looking for is available", word);
+} else {
+    console.log("ERROR 404!");
+}
+
+// #3
+ // In this challenge we want to use the toString() method.  This will a variables value into a string when used correctly.  Use Conditionals to keep practicing if/else statements.
+
+let abd = 23;
+console.log(abd.toString());
+
+let score = 29.5;
+console.log(score.toString());
+
+
