@@ -382,3 +382,106 @@ let score = 29.5;
 console.log(score.toString());
 
 
+/* QUESTION 1:
+// Create a function that accepts one argument, the number of times to console.log 'hello world'
+e.g.
+INPUT: repeatHelloWorld(2)
+OUTPUT:
+hello world
+hello world * /
+ 
+ */
+function repeatHelloWorld(num) {
+    for (let i = 0; i<num.length; i++) {
+        console.log("hello world");
+    }
+};
+
+repeatHelloWorld(18);
+
+/*
+ QUESTION 2:
+ Create a function that accepts one argument, an integer and console.logs from 0 up to the argument
+ e.g.
+ INPUT: printIncrement(3)
+ OUTPUT:
+ 0
+ 1
+ 2
+ 3
+ */
+
+function printIncrement(integer) {
+    for(let i = 0; i < integer; i++)
+        console.log(i);
+};
+
+printIncrement(4);
+
+/*
+ QUESTION 3:
+ - Repeat A String
+ Create a function "repeat" that accepts two arguments, the string to repeat and the a number that represtents how many times to repeat the string argument.  Return a string that concatenates all the times the string is repeated.
+ **Examples**
+ - INPUT: `repeat("yo",4);`
+ - OUTPUT: `'yoyoyoyo'`
+ - INPUT: `repeat("yo",0);`
+ - OUTPUT: `''`
+ - INPUT: `repeat("bye",6);`
+ - OUTPUT: `'byebyebyebyebyebye'`
+ Write Code Below
+ */
+
+function repeat(string, num) {
+    let string = "";
+    for (let i = 0; i < num; i++) {
+        let string1 = string + string1;
+    }
+    return string1;
+};
+
+repeat("Hi", 6);
+
+/*
+ QUESTION 4:
+ - Vowel Count
+ - Description:
+ Create the function "vowelCount(str)" that takes a str parameter and returns the number of vowels
+ the string contains (ie. "COMPUTER PROGRAMMER" would return 6).
+ **Do not count 'y' as a vowel for this challenge.**
+ **Example**
+ - INPUT: `vowelCount("Good Job");`
+ - Return Value: `3`
+ *** Write the vowelCount Function below *** */
+
+function vowelCount(string) {
+    let vowels = 0;
+    let string = "";
+    for(let i = 0; i < string.length; i++){
+        if (string.charAt[i] === "a" || string.charAt[i] === "e" || string.charAt[i] === "i" || string.charAt[i] === "o" || string.charAt[i] === "u") {
+            vowels++;
+        } else if(string.charAt[i] === "A" || string.charAt[i] === "E" || string.charAt[i] === "I" || string.charAt[i] === "O" || string.charAt[i] === "U") {
+            vowels++;
+        }
+    }
+    return vowels;
+};
+
+vowelCount("Engineering");
+
+/*
+ QUESTION 5:
+ Reverse a String
+ - Description
+ Create the function "reverseString" that reverses a string and returns the value of the reversed string. NOTE: Do NOT use the .reverse() method.
+ INPUT: reverseString("hello");
+ OUTPUT: "olleh";
+ *** Write the reverseString Function below ***
+ */
+
+
+
+
+
+
+
