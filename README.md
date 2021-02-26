@@ -1,1 +1,1 @@
-# QCC-Bootcamp
+# JS Exercises
